@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Inter", sans-serif;
+    
 
 }
 
@@ -118,4 +119,119 @@ nav div img{
     font-size: 16px;
     font-weight: 600;
     border: none;
+}
+
+/* plants-lover */
+
+.plants-lover{
+    margin-top: 210px;
+    margin-bottom: 133px;
+}
+
+.flex-item-1 img{
+    width: 540px;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.plants-lover-title{
+    font-family: "Noto Serif", serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+.flex-item-2 ul li{
+    font-size: 22px;
+    color: rgba(0, 0, 0, .5);
+    font-weight: 400;
+    margin-top: 20px;
+    list-style-position: inside;
+    
+}
+
+/* Latest deals */
+.deals-title{
+    font-family: "Noto Serif", serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 16px;
+
+}
+.deals{
+    text-align: center;
+    margin-bottom: 110px;
+}
+.deals-title span{
+    color: #E95A08;
+    
+}
+.deals-des{
+    font-size: 22px;
+    color: rgba(0, 0, 0, .5);
+    
+}
+.deals-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px;
+    row-gap: 25px;
+    column-gap: 28px;
+    text-align: center;
+    
+    
+    
+}
+.itemno-1{
+    background-image: url(./assets/deal-bloom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    
+}
+.itemno-2{
+    background-image: url(./assets/deal-zabo.png);
+    grid-area: 1 / 2 / 3/ 4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    
+}
+.itemno-3{
+    background-image: url(./assets/deal-ana.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.discount{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Noto Serif", serif;
+    color: #ffffff;
+}
+.deals-container div a{
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 19px auto;
+}
+.itemno-2 .discount{
+    font-size: 40px;
+}
+.deals-container .itemno-2 a{
+    font-size: 28px;
+    padding: 19px auto;
 }
