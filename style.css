@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+
+}
+
+/* Navbar */
+
+.head-section{
+    max-width: 1140px;
+    margin: auto;
+    border: 5px solid salmon;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+nav div img{
+    width: 135px;
+    
+}
+.menubar ul li{
+    list-style: none;
+    color: #252432;
+
+}
+.menubar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0px;
+    gap: 48px;
+    
+}
+.menubar ul:nth-child(2)
+{
+    color: red;
+}
