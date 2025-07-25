@@ -253,7 +253,7 @@ nav div img{
     height: auto;
 }
 .plants-lover{
-    margin: 41px 16px auto;
+    margin: 41px 16px 143px;
 }
     .plants-lover-title{
     font-size: 24px;}
@@ -347,6 +347,35 @@ nav div img{
     padding: 19px auto;
 }
 
+@media screen and (max-width: 576px){
+    .deals-title{
+    font-size: 24px;}
+    .deals-des{
+    font-size: 14px;
+    margin-bottom: 50px;}
+    .deals{
+    margin-bottom: 50px;}
+    .deals-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px;
+    row-gap: 20px;}
+    
+    .itemno-2 {
+    grid-area: auto;}
+    .deals-container{
+        margin: 0px 16px;
+    }
+    .itemno-2 .discount{
+    font-size: 20px;
+    }
+    .deals-container .itemno-2 a{
+    font-size: 16px;
+}
+    .itemno-2{
+        border-radius: 0PX;
+    }
+
+}
 /* subscribe */
 .subscribe{
     margin-top: 120px;
