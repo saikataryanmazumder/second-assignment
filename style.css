@@ -242,6 +242,24 @@ nav div img{
     list-style-position: inside;
     
 }
+@media screen and (max-width: 576px){
+    .flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.flex-item-1 img{
+    width: auto;
+    height: auto;
+}
+.plants-lover{
+    margin: 41px 16px auto;
+}
+    .plants-lover-title{
+    font-size: 24px;}
+    .flex-item-2 ul li{
+    font-size: 14px;}
+}
 
 /* Latest deals */
 .deals-title{
