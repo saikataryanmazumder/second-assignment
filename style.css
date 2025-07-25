@@ -35,6 +35,10 @@ nav div img{
     font-size: 22px;
 
 }
+.menubar ul li .menu-list{
+    color: #8987A1;
+}
+
 
 .menubar ul{
     display: flex;
@@ -51,10 +55,12 @@ nav div img{
     align-items: end;
     margin-bottom: 120px;
 }
-.banner-image{
-    /* max-width: 570px; */
+.banner-image img{
     width: 100%;
     height: auto;
+}
+.bannerdetails{
+    max-width: 570px;
 }
 .banner-title{
     font-family: "Noto Serif", serif;
@@ -93,6 +99,7 @@ nav div img{
     width: 63px;
    
     }
+
 }
     /* MEDIA QUERY FOR BANNER */
     @media screen and (max-width: 576px){
@@ -101,17 +108,10 @@ nav div img{
     flex-direction: column-reverse;
     height: auto;
     align-items: center;
-    margin-bottom: 60px;
     text-align: center;
     margin-bottom: 0px;
   }
-  
-  .banner-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    
-  }
+
   .bannerdetails{
     margin: 28px 16px 65px;
   }
@@ -123,7 +123,7 @@ nav div img{
   }
   .banner-description{
     font-size: 14px;
-    text-align: left;
+    text-align: justify;
   }
 }
 
@@ -167,7 +167,8 @@ nav div img{
 }
 .grid-items img{
     height: auto;
-    max-width: 270px;
+    width: 100%;
+    /* max-width: 270px; */
 }
 .price{
     font-size: 22px;
@@ -199,10 +200,8 @@ nav div img{
     grid-template-columns: repeat(2, 1fr);
     column-gap: auto;
     row-gap: 30px;}
-    .grid-items img{
-    max-width: 171px;}
     .grid-items{
-    max-width: 171px;}
+    width: 100%;}
     .btn{
     /* padding: 19px 30px;} */
     padding: 19px 0px;}
@@ -225,7 +224,7 @@ nav div img{
     position: relative;
 }
 .flex-item-1 img{
-    width: 540px;
+    width: 100%;
     
 }
 .flex-item-1 .badge{
@@ -250,6 +249,7 @@ nav div img{
     font-weight: bold;
 }
 .flex-item-2 ul li{
+    max-width: 540px;
     font-size: 22px;
     color: rgba(0, 0, 0, .5);
     font-weight: 400;
@@ -266,10 +266,7 @@ nav div img{
 .badge{
     display: none;
 }
-.flex-item-1 img{
-    width: auto;
-    height: auto;
-}
+
 .plants-lover{
     margin: 41px 16px 143px;
 }
@@ -369,6 +366,7 @@ nav div img{
     .deals-title{
     font-size: 24px;}
     .deals-des{
+    margin: 0px 28.5px;
     font-size: 14px;
     margin-bottom: 50px;}
     .deals{
@@ -426,7 +424,8 @@ nav div img{
   font-size: 16px;
   border: none;
   outline: none;
-  width: 100%;
+  flex: 1;
+  /* width: 100%; */
   
 }
 .subscribe form input[type="submit"]{
@@ -442,7 +441,6 @@ nav div img{
 @media screen and (max-width: 576px){
     .subscribe{
     margin-top: 40px;
-    width: 100%;
     min-height: 276px;
     background-image: url(./assets/news-letter-bg.png);
     background-size: auto;}
@@ -450,7 +448,10 @@ nav div img{
     font-size: 20px;}
     .sub-cont div form{
     min-width: 321px;
-    margin: 0px 36px;
+    margin: 0px 36px;}
+    .subscribe input[type="text"] {
+    width: 100%;;
+        
 }
     .subscribe form input[type="submit"]{
     padding: 19px 12px;}
