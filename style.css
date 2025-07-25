@@ -25,14 +25,17 @@ nav{
 }
 nav div img{
     width: 135px;
-    
-    
+   
 }
 .menubar ul li{
     list-style: none;
+}
+.menubar ul li a{
     color: #252432;
+    font-size: 22px;
 
 }
+
 .menubar ul{
     display: flex;
     justify-content: space-between;
@@ -41,16 +44,16 @@ nav div img{
     gap: 48px;
     
 }
+
 .banner{
     height: 461px;
     display: flex;
     align-items: end;
-    border: 5px solid salmon;
     margin-bottom: 120px;
 }
 .banner-image{
-    width: 570px;
-    border: 5px solid tomato;
+    max-width: 570px;
+    height: auto;
 }
 .banner-title{
     font-family: "Noto Serif", serif;
@@ -66,6 +69,63 @@ nav div img{
     color: rgba(0, 0, 0, .5);
 
 }
+
+@media screen and (max-width: 576px){
+    .menubar ul li:nth-child(1),
+    .menubar ul li:nth-child(2),
+    .menubar ul li:nth-child(3){
+    display: none;
+} 
+    nav{
+        margin: 13px 16px 28px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menubar ul{
+        
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+    nav div img{
+    width: 63px;
+   
+    }
+}
+    /* MEDIA QUERY FOR BANNER */
+    @media screen and (max-width: 576px){
+    
+     .banner {
+    flex-direction: column-reverse;
+    height: auto;
+    align-items: center;
+    margin-bottom: 60px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  .banner-image {
+    width: auto;
+    height: auto;
+    display: block;
+    
+  }
+  .bannerdetails{
+    margin: 28px 16px 65px;
+  }
+  .banner-title{
+    font-size: 24px;
+    margin-top: 28px ;
+    text-align: start;
+    max-width: 191px;
+  }
+  .banner-description{
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
 
 /* our plants */
 .ourplants-title{
@@ -104,6 +164,10 @@ nav div img{
     color: #111111;
     margin-top: 30px;
 }
+.grid-items img{
+    height: auto;
+    max-width: 270px;
+}
 .price{
     font-size: 22px;
     font-weight: bold;
@@ -120,6 +184,34 @@ nav div img{
     font-weight: 600;
     border: none;
 }
+@media screen and (max-width: 576px){
+    .ourplants-title{
+    font-size: 24px;
+    }
+    .ourplants-des{
+    font-size: 14px;}
+    .plants{
+        margin: auto 16px;
+    }
+    .grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: auto;
+    row-gap: 30px;}
+    .grid-items img{
+    max-width: 171px;}
+    .grid-items{
+    max-width: 171px;}
+    .btn{
+    /* padding: 19px 30px;} */
+    padding: 19px 0px;}
+    .flower-name, .flower-name{
+        font-size: 16px;}
+    .price{
+        margin-top: 0px;
+    }
+}
+
 
 /* plants-lover */
 
@@ -227,6 +319,7 @@ nav div img{
     font-size: 16px;
     color: #ffffff;
     padding: 19px auto;
+    text-decoration: underline;
 }
 .itemno-2 .discount{
     font-size: 40px;
@@ -283,12 +376,13 @@ nav div img{
 }
 
 /* footer */
-footer{
+/* footer{
     width: 100%;
     
-}
+} */
 .footer-cont{
-    padding: 50px 160px;
+    /* padding: 50px 160px; */
+    margin: 50px 0px;
     display: flex;
     justify-content: space-between;
     
