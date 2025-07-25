@@ -239,7 +239,7 @@ nav div img{
 /* subscribe */
 .subscribe{
     margin-top: 120px;
-    width: 100vw;
+    width: 100%;
     min-height: 533px;
     background-image: url(./assets/news-letter-bg.png);
     background-size: cover;
@@ -280,4 +280,55 @@ nav div img{
   cursor: pointer;
   border: none;
   outline: none;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    
+}
+.footer-cont{
+    padding: 50px 160px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.links ul li a{
+    color: gray;
+}
+
+.links ul li{
+    list-style: none;
+    font-size: 22px;
+    font-weight: 400;
+    color: gray;
+    /* margin-bottom: 32px; */
+
+}
+.links ul{
+    height: 248px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about{
+    max-width: 360px;
+}
+.about img{
+    width: 135px;
+    margin-bottom: 16px;
+}
+.about p{
+    font-size: 22px;
+    font-weight: 400;
+    color: gray
+}
+.icons{
+    height: 36px;
+    width: 216px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
