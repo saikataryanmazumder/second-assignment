@@ -52,7 +52,8 @@ nav div img{
     margin-bottom: 120px;
 }
 .banner-image{
-    max-width: 570px;
+    /* max-width: 570px; */
+    width: 100%;
     height: auto;
 }
 .banner-title{
@@ -106,7 +107,7 @@ nav div img{
   }
   
   .banner-image {
-    width: auto;
+    width: 100%;
     height: auto;
     display: block;
     
@@ -179,7 +180,7 @@ nav div img{
     width: 100%;
     background-color: #E95A08;
     color: white;
-    padding: 19px 80px;
+    padding: 19px 0px;
     font-size: 16px;
     font-weight: 600;
     border: none;
@@ -218,16 +219,30 @@ nav div img{
 .plants-lover{
     margin-top: 210px;
     margin-bottom: 133px;
+   
 }
-
+.flex-item-1{
+    position: relative;
+}
 .flex-item-1 img{
     width: 540px;
+    
 }
+.flex-item-1 .badge{
+    height: auto;
+    width: 286px;
+    position: absolute;
+    top: -127px;
+    right: -93px;
+}
+
 .flex-container{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
+    
+    
 }
 .plants-lover-title{
     font-family: "Noto Serif", serif;
@@ -247,6 +262,9 @@ nav div img{
     display: flex;
     flex-direction: column;
     gap: 18px;
+}
+.badge{
+    display: none;
 }
 .flex-item-1 img{
     width: auto;
