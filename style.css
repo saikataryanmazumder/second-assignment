@@ -413,7 +413,7 @@ nav div img{
 }
 .subscribe form input[type="submit"]{
   padding: 19px 53.5px;
-  background-color: #E95A08;
+  background-color:#E95A08;
   color: white;
   font-size: 16px;
   font-weight: 600;
@@ -421,12 +421,27 @@ nav div img{
   border: none;
   outline: none;
 }
+@media screen and (max-width: 576px){
+    .subscribe{
+    margin-top: 40px;
+    width: 100%;
+    min-height: 276px;
+    background-image: url(./assets/news-letter-bg.png);
+    background-size: auto;}
+    .subscribe h1{
+    font-size: 20px;}
+    .sub-cont div form{
+    min-width: 321px;
+    margin: 0px 36px;
+}
+    .subscribe form input[type="submit"]{
+    padding: 19px 12px;}
+
+
+}
 
 /* footer */
-/* footer{
-    width: 100%;
-    
-} */
+
 .footer-cont{
     /* padding: 50px 160px; */
     margin: 50px 0px;
