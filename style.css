@@ -254,7 +254,9 @@ nav div img{
     font-weight: bold;
 }
 .flex-item-2 ul{
-     list-style-position: inside;
+    max-width: 540px;
+    list-style-position: outside;
+    padding-left: 22px;
 }
 .flex-item-2 ul li{
     max-width: 540px;
@@ -262,6 +264,8 @@ nav div img{
     color: rgba(0, 0, 0, .5);
     font-weight: 400;
     margin-top: 20px;
+    
+    
     
 }
 @media screen and (max-width: 576px){
@@ -302,6 +306,8 @@ nav div img{
 .deals-des{
     font-size: 22px;
     color: rgba(0, 0, 0, .5);
+    max-width: 888px;
+    margin: auto;
     
 }
 .deals-container{
@@ -397,6 +403,9 @@ nav div img{
     .itemno-2{
         border-radius: 0PX;
     }
+    /* .flex-item-2 ul{
+        padding-left: 16px;
+    } */
 
 }
 /* subscribe */
